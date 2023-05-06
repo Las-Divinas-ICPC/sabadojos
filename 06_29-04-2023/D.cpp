@@ -1,11 +1,3 @@
-/*
-Grupo Marrano - El Ansioso
-0:18 ━━━❍─────────── -3:06
-↻        ⊲  Ⅱ  ⊳        ↺
-   VOLUME: ▁▂▃▄▅▆▇ 100%
-
-Problem: D. Dyson Box
-*/
 #include <bits/stdc++.h>
 #define ENDL '\n'
 #define lli long long
