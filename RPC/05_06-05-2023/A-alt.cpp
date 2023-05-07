@@ -1,3 +1,6 @@
+// Para suprimir el warning
+#pragma GCC diagnostic ignored "-Wmaybe-uninitialized"
+
 #include <bits/stdc++.h>
 #define ENDL '\n'
 #define lli long long
@@ -32,7 +35,7 @@ void solve(){
 		
 
 		char* yp;
-		fore(i,0,3) // '-' debería de estar en la posición 1 ó 2 (0-indexado)
+		fore(i,1,3) // '-' debería de estar en la posición 1 ó 2 (0-indexado)
 			if(s[i] == '-'){
 				s[i] = '\0';
 				yp = &s[i+1];
