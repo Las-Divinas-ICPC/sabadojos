@@ -1,0 +1,54 @@
+{
+	"Template for competitive programming" : {
+		"scope": "cpp",
+		"prefix": "cp",
+		"body": [
+			"#include <bits/stdc++.h>",
+			"#define ENDL '\\n'",
+			"#define int long long",
+			"#define pb push_back",
+			"#define ff first",
+			"#define ss second",
+			"#define deb(x) cout << #x << \" \" << x << ENDL;",
+			"#define fore(i,a,b) for(int i=a;i<b;i++)",
+			"#define sz(x) (int)x.size()",
+			"#define all(s) begin(s), end(s)",
+			"#define IO ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0)",
+
+			"\nusing namespace std;",
+			"using vi = vector<int>;",
+			"using pii = pair<int, int>;",
+
+			"\nvoid solve(){",
+			"\t$1",
+			"}",
+
+			"\nint main(){",
+			"\tIO;",
+			"\tint t; cin>>t; while(t--)",
+			"\tsolve();",
+			"\treturn 0;",
+			"}"
+		],
+		"description": "Template for competitive programming"
+	},
+
+	"Algorithm criba to get prime numbers":{
+		"scope": "cpp",
+		"prefix": "criba",
+		"body": [
+			"vector<bool> criba(int n){",
+			"\tvector<bool> isPrime(n+1, true);",
+			"\tisPrime[0] = isPrime[1] = false;",
+			"\tfor(int i = 2; i*i <= n; i++){",
+			"\t\tif(isPrime[i]){",
+			"\t\t\tfor(int j = i*i; j <= n; j += i){",
+			"\t\t\t\tisPrime[j] = false;",
+			"\t\t\t}",
+			"\t\t}",
+			"\t}",
+			"\treturn isPrime;",
+			"}"
+		]
+	}
+}
